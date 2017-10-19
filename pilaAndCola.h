@@ -4,7 +4,7 @@
 *  Elaborado por: Ricardo Andres Villalobos
 */
 #define RESERVAR_MEMORIA (Nodo *)malloc(sizeof(Nodo))
-#define MENSAJE_TIEMPO printf("\nTiempo transcurrido: %.0f milisegundos.", ((double)clock() - tiempoInicio))
+#define MENSAJE_TIEMPO printf("\nTiempo transcurrido: %.0f milisegundos.", ((double)clock() - tiempoInicio) / CLOCKS_PER_SEC)
 
 struct Nodo
 {
